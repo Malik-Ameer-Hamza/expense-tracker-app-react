@@ -1,5 +1,5 @@
 
-export default (state,action) => {
+export const AppReducer = (state,action) => {
     switch(action.type){
         case 'DELETE_TRANSACTION':
             return{
