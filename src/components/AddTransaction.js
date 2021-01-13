@@ -25,11 +25,11 @@ export const AddTransaction = () => {
         <form onSubmit={onSubmit}>
             <div className="form-control">
                 <label htmlFor="text">Text</label>
-                <Tooltip title="Enter Description"><input type="text" value={text} onChange={(e)=>{setText(e.target.value)}} placeholder="Enter text"/></Tooltip>
+                <Tooltip title="Enter Description"><input type="text" required value={text} onChange={(e)=>{setText(e.target.value)}} placeholder="Enter text"/></Tooltip>
             </div>
             <div className="form-control">
                 <label htmlFor="text">Amount<br />(negative - expense, positive - income)</label>
-                <Tooltip title="Enter Amount expenses in negative and income in positive"><input type="number" value={amount} onChange={(e)=>{setAmount(e.target.value)}} placeholder="Enter amount"/></Tooltip>
+                <Tooltip title="Enter Amount expenses in negative and income in positive"><input type="number" value={amount} required onChange={(e)=>{setAmount(e.target.value)}} placeholder="Enter amount"/></Tooltip>
             </div>
             <button className="btn">Add Transaction</button>
         </form>
