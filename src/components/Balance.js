@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
+import TextsmsIcon from '@material-ui/icons/Textsms';
 
 export const Balance = () =>{
     const {transactions} = useContext(GlobalContext);
@@ -10,7 +11,7 @@ export const Balance = () =>{
     
     return(
         <>
-            <h4>Your Balance</h4>
+            <h4>Your  Balance <TextsmsIcon className="sms" onClick={()=>(alert("Hello, My name is Ameer Hamza.this is my first project of bootcamp of PIAIC. Thank you for Visiting. "))}></TextsmsIcon></h4>
             <h1>Rs. {total}</h1>
         </>
     )
